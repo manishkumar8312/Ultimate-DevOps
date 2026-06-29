@@ -120,20 +120,20 @@ Linux dominates because it can scale from a wristwatch to a supercomputer.
 
 ```mermaid
 flowchart LR
-    subgraph Use_Cases[Linux Use Cases]
+    subgraph Use_Cases["Linux Use Cases"]
         direction LR
-        Server[🖥️ Server<br> (Web/DB/File)]
-        Desktop[🖱️ Desktop<br> (Workstation/Gaming)]
-        Embedded[📟 Embedded<br> (IoT/Routers/Android)]
-        Cloud[☁️ Cloud<br> (VM Hosts)]
-        Container[📦 Container<br> (Docker/K8s)]
+        Server["Server"]
+        Desktop["Desktop"]
+        Embedded["Embedded"]
+        Cloud["Cloud"]
+        Container["Container"]
     end
 
-    Server --> Distro1[RHEL / Debian Stable]
-    Desktop --> Distro2[Ubuntu / Fedora / Mint]
-    Embedded --> Distro3[Yocto / Buildroot / Android]
-    Cloud --> Distro4[Ubuntu Server / Amazon Linux / CoreOS]
-    Container --> Distro5[Alpine / Distroless / Flatcar]
+    Server --> Distro1["RHEL / Debian Stable"]
+    Desktop --> Distro2["Ubuntu / Fedora / Mint"]
+    Embedded --> Distro3["Yocto / Buildroot / Android"]
+    Cloud --> Distro4["Ubuntu Server / Amazon Linux / CoreOS"]
+    Container --> Distro5["Alpine / Distroless / Flatcar"]
 ```
 
 **Deep Dive into each:**
