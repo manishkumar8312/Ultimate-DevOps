@@ -146,4 +146,4 @@
 2. **Practice one "Interview Twist" question** per chapter daily.
 3. **For Senior Roles:** Spend 70% of your time on Chapters 7 and 8 – that's where they filter for experience.
 
-This 8-chapter structure guarantees you cover every possible Linux topic asked in a technical interview, from "What is `ls`?" to "Why is my server swapping to death?"
+If this syllabus helps you to land your dream job, consider giving it a star⭐. Contributions, corrections, and additional topic requests are always welcome. Keep compiling your success! 
