@@ -58,15 +58,21 @@ A distro takes the vanilla Linux kernel, wraps it with all the GNU utilities, ad
 *Visualizing the Architecture:*
 
 ```mermaid
-flowchart TD
-    Hardware[Physical Hardware: CPU, RAM, Disk, NIC] --> Kernel[Linux Kernel<br> (Scheduler, Drivers, Syscalls)]
-    Kernel --> System_Libs[System Libraries<br> (glibc - GNU C Library)]
-    System_Libs --> Core_Utils[Core Utilities<br> (ls, cp, grep, bash)]
-    Core_Utils --> Package_Manager[Package Manager<br> (APT, DNF, Pacman)]
-    Package_Manager --> DE[Desktop Environment / Server Apps]
-    
-    style Kernel fill:#f9f,stroke:#333,stroke-width:4px
-    style Package_Manager fill:#ff9,stroke:#333,stroke-width:2px
+flowchart LR
+    subgraph Use_Cases["Linux Use Cases"]
+        direction LR
+        Server["🖥️ Server\n(Web/DB/File)"]
+        Desktop["🖱️ Desktop\n(Workstation/Gaming)"]
+        Embedded["📟 Embedded\n(IoT/Routers/Android)"]
+        Cloud["☁️ Cloud\n(VM Hosts)"]
+        Container["📦 Container\n(Docker/K8s)"]
+    end
+
+    Server --> Distro1["RHEL / Debian Stable"]
+    Desktop --> Distro2["Ubuntu / Fedora / Mint"]
+    Embedded --> Distro3["Yocto / Buildroot / Android"]
+    Cloud --> Distro4["Ubuntu Server / Amazon Linux / CoreOS"]
+    Container --> Distro5["Alpine / Distroless / Flatcar"]
 ```
 
 ---
