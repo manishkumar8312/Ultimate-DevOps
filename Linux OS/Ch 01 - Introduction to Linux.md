@@ -83,24 +83,26 @@ Every distribution belongs to a "family tree" based on its package management sy
 
 ```mermaid
 flowchart TD
-    Kernel[Linux Kernel] --> Debian[Debian Family<br> Package: .deb / Manager: APT]
-    Kernel --> RedHat[Red Hat Family<br> Package: .rpm / Manager: DNF/YUM]
-    Kernel --> Arch[Arch Family<br> Package: .pkg.tar.zst / Manager: Pacman]
-    Kernel --> SUSE[SUSE Family<br> Package: .rpm / Manager: Zypper]
+    Kernel["Linux Kernel"]
 
-    Debian --> Ubuntu[Ubuntu<br> (User-friendly / Cloud)]
-    Ubuntu --> Mint[Linux Mint<br> (Desktop Beginners)]
-    Debian --> Raspbian[Raspberry Pi OS<br> (Embedded)]
+    Kernel --> Debian["Debian Family<br/>Package: .deb<br/>Manager: APT"]
+    Kernel --> RedHat["Red Hat Family<br/>Package: .rpm<br/>Manager: DNF/YUM"]
+    Kernel --> Arch["Arch Family<br/>Package: .pkg.tar.zst<br/>Manager: Pacman"]
+    Kernel --> SUSE["SUSE Family<br/>Package: .rpm<br/>Manager: Zypper"]
 
-    RedHat --> RHEL[RHEL<br> (Enterprise / Paid Support)]
-    RHEL --> CentOS_Stream[CentOS Stream<br> (Upstream RHEL)]
-    RHEL --> Fedora[Fedora<br> (Cutting-edge / Innovator)]
+    Debian --> Ubuntu["Ubuntu<br/>User-friendly / Cloud"]
+    Ubuntu --> Mint["Linux Mint<br/>Desktop Beginners"]
+    Debian --> Raspbian["Raspberry Pi OS<br/>Embedded"]
 
-    Arch --> Manjaro[Manjaro<br> (User-friendly Rolling)]
-    Arch --> EndeavourOS[EndeavourOS<br> (Arch with GUI installer)]
+    RedHat --> RHEL["RHEL<br/>Enterprise / Paid Support"]
+    RHEL --> CentOSStream["CentOS Stream<br/>Upstream RHEL"]
+    RHEL --> Fedora["Fedora<br/>Cutting-edge / Innovator"]
 
-    SUSE --> openSUSE_Leap[openSUSE Leap<br> (Stable / Enterprise base)]
-    SUSE --> openSUSE_TW[openSUSE Tumbleweed<br> (Rolling Release)]
+    Arch --> Manjaro["Manjaro<br/>User-friendly Rolling"]
+    Arch --> EndeavourOS["EndeavourOS<br/>Arch with GUI Installer"]
+
+    SUSE --> OpenSUSELeap["openSUSE Leap<br/>Stable / Enterprise Base"]
+    SUSE --> OpenSUSETW["openSUSE Tumbleweed<br/>Rolling Release"]
 ```
 
 **Detailed Breakdown:**
